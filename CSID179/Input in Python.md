@@ -42,17 +42,39 @@ I think i did it correctly, because the print the avrage daily value with intres
 
 
 c. Two cars A and B leave an intersection at the same time. Car A travels west at an average speed of x miles per hour and car B travels south at an average speed of y miles per hour. Write a program that prompts the user to enter the average speed of both the cars and the elapsed time (in hours and minutes) and outputs the (shortest) distance between the cars.
+```python
+#prompt the user to enter the average speed of car A
+theaveragespeedofcarA = float(input("enter MPH of car A: "))
+
+#prompt the user to enter the average speed of car B
+theaveragespeedofcarB = float(input("Enter MPH of car B: "))
+
+#prompt the user to enter the elapsed time in hours and minutes
+elapsed_hours = int(input("enter hours: "))
+elapsed_minutes = int(input("enter minutes: "))
+
+#convert elapsed time to hours
+theelapsedtime = elapsed_hours + elapsed_minutes / 60
+
+#calculate distance traveled from car A and car B
+distancetraveledfromcarA = theaveragespeedofcarA * theelapsedtime
+distancetraveledfromcarB = theaveragespeedofcarB * theelapsedtime
+
+#display the equivlant distance in miles
+print(f"distance of car A in miles:  {distancetraveledfromcarA:.2f} miles")
+print(f"distance of car B in miles:  {distancetraveledfromcarB:.2f} miles")
+```
 
 ### 2. Troubleshooting
 
 Please troubleshoot the following issue without using Python, and explain your reasoning.
 
 ```python
-a. hello = "hello"
-b. _var = 100
-c. !var_1 = 200
-d. print = "print me"
-e. False = 0
+a. `hello = "hello"`(it cant assign a varable to its self)
+b. `_var = 100` (I see no isue with this)
+c. `!var_1 = 200`(invalad name it can not be a symbol)
+d. `print = "print me"`(print shouldnt be used twice as print already has a function, try re-wording it)
+e. `False = 0` (false is also a set function and should only be used in its case like when looking a flush=False)  
 ```
 
 ## Challenges
