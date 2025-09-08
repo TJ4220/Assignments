@@ -20,3 +20,9 @@ print("127","0","0","1",sep=".")
 
 ## This is part D
 A situation where flush=True would be in a loading bar where you want to have immediate feed back,you would want to use flush=False in cases where the data dose not need to be immediately showing, or having it as a background effect.
+
+
+### This is part E
+Which argument triggers the flush? 
+flush=True 
+because the defualt is false mostly for preformance but also because its not nessary to always have it being true it is a case by case for which one needs to be used. 
