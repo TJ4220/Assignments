@@ -35,6 +35,8 @@ var_1 = 100
 var_2 = 100
 print('var _1 memory adress is: ',hex(id(var_1)))
 print('var _2 memory adress is: ',hex(id(var_2)))
+var _1 memory adress is:  0x7ffeadcc8008
+var _2 memory adress is:  0x7ffeadcc8008
 ```
 It reused the existing one
 
