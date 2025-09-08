@@ -65,9 +65,9 @@ print(hex(id(str1[0])), hex(id(str1[1])))  # where 0 is the first index and 1 is
 
 | Address in hexadecimal | Char |
 | ---------------------- | ---- |
-| #                      |      |
-| #                      |      |
-| #                      |      |
+| # 0x7ffecf8c70a0       |str1  |
+| # 0x7ffecf8c7310       |str2  |
+| # 0x7ffecf8c6b30       |str0  |
 | #                      |      |
 | #                      |      |
 | #                      |      |
@@ -96,12 +96,32 @@ If `x = 50`. Use an assignment statement to increment the value of `x` by 1.
 
 Please troubleshoot the following issue **without using Python**, and explain your reasoning.
 
-a. `hello = "hello"`
-b. `_var = 100`
-c. `!var_1 = 200`
-d. `print = "print me"`
-e. `False = 0`
+a. `hello = "hello"`(it cant assign a varable to its self)
+b. `_var = 100` (I see no isue with this)
+c. `!var_1 = 200`(invalad name it can not be a symbol)
+d. `print = "print me"`(print shouldnt be used twice as print already has a function, try re-wording it)
+e. `False = 0` (false is also a set function and should only be used in its case like when looking a flush=False)  
 
 
 
 Write your answer here
+## Challenges
+
+Please describe the challenges you faced during the exercise.
+
+```python
+# I am very lost when you brought up the table I watched your video and i understand that its asigning values to the letters and its reusing the repeated ones but im lost at why their are so many lines i feel like im doing it incorrectly. 
+
+# With assigning x being dogs and y being cats what are you asking us to do in writing the problem why am i assinging x=50 when you said its dog i am completely lost with what I am ment to be doing? 
+
+# 
+
+# _________________________________________________________________________________________________
+
+# _________________________________________________________________________________________________
+
+# _________________________________________________________________________________________________
+
+```
+
+**End of exercise**
