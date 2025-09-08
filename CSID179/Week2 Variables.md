@@ -50,6 +50,12 @@ str2 = "World"
 ```
 # Find out the memory addresses of each character in str1 and str2.
 # The following is the example
+str1 = "Hello"
+str2 = "World"
+print(hex(id(str1[1])))
+print(hex(id(str2[2])))
+0x7ffecf8c70a0
+0x7ffecf8c7310
 ```
 
 ```
