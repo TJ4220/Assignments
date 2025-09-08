@@ -36,7 +36,7 @@ avragedailyvalue = (netbalance * numberofdaysinthebillingcycle - payment * numbe
 #convert with intrest included
 intrest = ( avragedailyvalue * 0.0152)
 #display the equivalent averagedailybalance with intrest
-print("Equivalent average daily value with intrest: {:3.2f} $".format(0.0152))
+print("Equivalent average daily value with intrest: {:.2f} $".format(0.0152))
 ```
 I think i did it correctly, because the print the avrage daily value with intrest is being multiplied by 0.0152 after all else was inputed but the numbers are a bit strange so maybe my math is incorrect. 
 
