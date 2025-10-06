@@ -4,7 +4,8 @@ import re
 from collections import Counter
 from pathlib import Path
 import matplotlib
-matplotlib.use("Agg")  # save image to a file without opening a window
+matplotlib.use("Agg")
+# save image to a file
 import matplotlib.pyplot as plt
 story_path = Path("story.txt")
 if not story_path.exists():
