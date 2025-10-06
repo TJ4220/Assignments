@@ -1,7 +1,4 @@
 # Week 6 Text Parsing
-
-I keep this simple. I explain each part in plain words.
-
 ```python
 import re
 from collections import Counter
