@@ -20,12 +20,11 @@ if not text.strip():
     raise ValueError("story.txt is empty. please paste the story text")
 # make a list of words
 # lower case words so Hello and hello count the same
-# keep letters digits and the apostrophe so cant stays one word
+# keep letters digits
 words = re.findall(r"[A-Za-z0-9']+", text.lower())
 # count characters
 # with spaces and new lines
 chars_with_space = len(text)
-# without any white space
 chars_no_space = len(re.sub(r"\s+", "", text))
 print("STEP 1 list")
 print("total words:", len(words))
@@ -51,7 +50,7 @@ if top:
     print("\nsaved chart to:", chart_path)
 else:
     print("\nno words to plot")
-# find phone numbers and emails with regex
+# find phone numbers and emails
 phone_re = re.compile(r"""
     (?:\+?\d{1,3}[\s.\-]?)?      # optional country code
     (?:\(\d{3}\)|\d{3})          # area code
@@ -66,7 +65,7 @@ print("phones:", phones)
 print("emails:", emails)
 print("combined list:", combined)
 # make hotmail emails from usernames
-# take the part before the at sign
+# taking the part before the at sign
 hotmails = [e.split("@", 1)[0] + "@hotmail.com" for e in emails]
 print("\nSTEP 4 hotmail list")
 print(hotmails)
