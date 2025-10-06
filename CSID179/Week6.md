@@ -7,6 +7,8 @@ import matplotlib
 matplotlib.use("Agg")  # save image to a file without opening a window
 import matplotlib.pyplot as plt
 story_path = Path("story.txt")
+if not story_path.exists():
+    story_path + Path("CSID179/Story-1.txt")
 out_dir = Path("outputs")
 out_dir.mkdir(exist_ok=True)
 chart_path = out_dir / "word_histogram.png"
